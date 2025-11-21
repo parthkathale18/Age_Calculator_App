@@ -1,0 +1,117 @@
+/* Google Font Import */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
+/* Basic CSS Boilerplate */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  width: 100%;
+  height: 100%;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  background: linear-gradient(135deg, #42275a, #734b6d);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.container {
+  width: 90%;
+  max-width: 600px;
+  height: auto;
+  background: rgba(255, 255, 255, 0.167);
+  backdrop-filter: blur(10px);
+  border-radius: 15px;
+  border: 1px solid rgb(156, 156, 156);
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-direction: column;
+  padding: 20px 30px;
+}
+
+.container h1 {
+  color: #f5f8bf;
+  margin-bottom: 10px;
+  font-size: 40px;
+}
+
+.container .box {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 20px;
+  width: 100%;
+  background-color: rgba(255, 255, 255, 0.153);
+  backdrop-filter: blur(10px);
+  padding: 20px 30px;
+  border-radius: 15px;
+}
+
+.box input {
+  flex: 1;
+  padding: 10px 25px;
+  border-radius: 8px;
+  border: none;
+  outline: none;
+  background-color: rgba(255, 255, 255, 0.389);
+  backdrop-filter: blur(10px);
+}
+
+input[type="date"] {
+  padding: 10px 15px;
+  font-size: 16px;
+  border: none;
+  border-radius: 8px;
+  background-color: rgba(255,255,255,0.4);
+  color: rgb(80, 79, 79);
+}
+
+.box input:focus {
+  box-shadow: 0 0 5px rgba(255, 255, 255, 0.7);
+}
+
+.box button {
+  padding: 10px 25px;
+  border-radius: 8px;
+  border: none;
+  outline: none;
+  background-color: #734b6d;
+  color: #fff;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.box button:hover {
+  background-color: #5d3c56;
+  transform: scale(1.02);
+}
+
+.container h2{
+    color: #f5f8bf;
+    margin-top: 20px;
+    display: none;
+}
+
+.container h3{
+    color: #f5f8bf;
+    margin-bottom: 10px;
+}
+
+
+
+
+@media (max-width:768px) {
+    .box{
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+    }
+    
+}
